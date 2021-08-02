@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/homes/new" method="POST">
+<div class="row">
+        <div class="col">
+            <label for="Sell">Sell Price</label>
+            <input id="Sell" type="text" class="form-control" placeholder="Sell Price" name="Sell">
+        </div>
+        <div class="col">
+            <label for="List">List Price</label>
+            <input id="List" type="text" class="form-control" placeholder="List Price" name="List">
+        </div>
+        <div class="col">
+            <label for="Living">Living</label>
+            <input id="Living" type="text" class="form-control" placeholder="Living" name="Living">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Rooms">Number of Rooms</label>
+            <input id="Rooms" type="text" class="form-control" placeholder="Number of Rooms" name="Rooms">
+        </div>
+        <div class="col">
+            <label for="Beds">Number of Beds</label>
+            <input id="Beds" type="text" class="form-control" placeholder="Number of Beds" name="Beds">
+        </div>
+        <div class="col">
+            <label for="Baths">Number of Baths</label>
+            <input id="Baths" type="text" class="form-control" placeholder="Number of Baths" name="Baths">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Age">Age of Property</label>
+            <input id="Age" type="text" class="form-control" placeholder="Age of Property" name="Age">
+        </div>
+        <div class="col">
+            <label for="Acres">Number of Acres</label>
+            <input id="Acres" type="text" class="form-control" placeholder="Number of Acres" name="Acres">
+        </div>
+        <div class="col">
+            <label for="Taxes">Taxes</label>
+            <input id="Taxes" type="text" class="form-control" placeholder="Taxes" name="Taxes">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Success</button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Sell Price</th>
+        <th scope="col">List Price</th>
+        <th scope="col">Living</th>
+        <th scope="col">Rooms</th>
+        <th scope="col">Beds</th>
+        <th scope="col">Baths</th>
+        <th scope="col">Age</th>
+        <th scope="col">Acres</th>
+        <th scope="col">Taxes</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for home in homes %}
+    <tr>
+        <td><a href="/view/{{home.id}}">{{ home.Sell }}</a></td>
+        <td>{{ home.List }}</td>
+        <td>{{ home.Living }}</td>
+        <td>{{ home.Rooms }}</td>
+        <td>{{ home.Beds }}</td>
+        <td>{{ home.Baths }}</td>
+        <td>{{ home.Age }}</td>
+        <td>{{ home.Acres }}</td>
+        <td>{{ home.Taxes }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

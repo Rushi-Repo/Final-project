@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Team | Docker, Linux, and Containerization</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c2acbb3625.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/team.css') }}">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand"><a href="/"><img src="../static/styles/home_logo.svg" width="100"
+                                                        height="50"></a></h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <form action="/">
+                    <a class="nav-link" href="/">Home</a>
+                </form>
+                <form action="/">
+                    <a class="nav-link" href="/about">About</a>
+                </form>
+                <form action="/">
+                    <a class="nav-link active" href="/team">Team</a>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+<!-- Team cards -->
+<main role="main" class="team-boxed team-push">
+    <div class="container">
+        <div class="row people">
+            <div class="col-md-6 col-lg-6 item">
+                <div class="box">
+                    <h3 class="name">Justin Nietzer</h3>
+                    <p class="title">Student</p>
+                    <p class="description">Pursuing a career in Software Development through the New Jersey Institute of
+                        Technology. </p>
+                    <div class="social"><a href="https://www.linkedin.com/in/justin-nietzer-149195127/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a><a href="https://github.com/JustinNietz" target="_blank"><i
+                            class="fa fa-github"></i></a></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 item">
+                <div class="box">
+                    <h3 class="name">Nikolett Muller</h3>
+                    <p class="title">Student</p>
+                    <p class="description">Master of Information Systems student at New Jersey Institute of
+                        Technology</p>
+                    <div class="social"><a href="https://www.linkedin.com/in/nikolett-muller-2514a6207/"
+                                           target="_blank"><i class="fa fa-linkedin"></i></a><a
+                            href="https://github.com/LadyObserver85" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer-bottom py-5">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Nietzer and Muller 2021</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

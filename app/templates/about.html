@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About | Docker, Linux, and Containerization</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c2acbb3625.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/layout.css') }}">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand"><a href="/"><img src="../static/styles/home_logo.svg" width="100"
+                                                        height="50"></a></h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <form action="/">
+                    <a class="nav-link" href="/">Home</a>
+                </form>
+                <form action="/">
+                    <a class="nav-link active" href="/about">About</a>
+                </form>
+                <form action="/">
+                    <a class="nav-link" href="/team">Team</a>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container content-rounded">
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-12">
+
+                <!-- Title -->
+                <h1 class="mt-4">About this website</h1>
+
+                <hr>
+
+                <!-- Post Content -->
+                <h2>Project Description</h2>
+
+                <p>This website is designed for NJIT's course IS-601. We needed to research and
+                    develop one unique feature per team member and integrate it into the application.</p>
+                <p>Justin Nietzer worked on creating a login and registration process that includes email verification and Nikolett
+                    Muller worked on using the statistics project to create API endpoints and then consume those endpoints
+                    using a JavaScript chart. </p>
+
+
+                <h2>Course Description</h2>
+
+                <p>
+                    This website was designed as the second project for NJIT's course IS-601. This class, Web System
+                    Development, is designed to experience in the development of Web based systems using an
+                    object-oriented
+                    programming language and SQL.
+                </p>
+                <p>In this course, students will learn to develop a web-based system through
+                    an intensive hands-on project that requires students to apply real-world problem-solving skills to
+                    meet
+                    the challenge of developing a web-based information system.
+                </p>
+                <p>
+                    Students will learn the basic principles of
+                    web-based applications, MVC application design, how to apply object-oriented design patterns, design
+                    a
+                    relational database, and write SQL queries to create, retrieve, update, and delete information in a
+                    database.
+                </p>
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+        <hr class="featurette-divider">
+    </div>
+
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Nietzer and Muller 2021</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

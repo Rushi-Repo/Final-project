@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="card" class="m-5 p-2">
+    <h5 class="card-title">Home #-{{ home.id }}</h5>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Sell Price = {{ home.Sell }}</li>
+        <li class="list-group-item">List Price = {{ home.List }}</li>
+        <li class="list-group-item">Living = {{ home.Living }}</li>
+        <li class="list-group-item">Number of Rooms = {{ home.Rooms }}</li>
+        <li class="list-group-item">Number of Beds = {{ home.Beds }}</li>
+        <li class="list-group-item">Number of Baths = {{ home.Baths }}</li>
+        <li class="list-group-item">Age of Property = {{ home.Age }}</li>
+        <li class="list-group-item">Number of Acres = {{ home.Acres }}</li>
+        <li class="list-group-item">Taxes = {{ home.Taxes }}</li>
+    </ul>
+    <div class="card-body">
+        <a href="/edit/{{home.id}}" class="card-link btn btn-primary">edit</a>
+    </div>
+</div>
+<form action="/delete/{{home.id}}" method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+
+{% endblock %}
